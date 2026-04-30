@@ -1,0 +1,234 @@
+[
+    {
+        "id": "netflix",
+        "serviceName": "Netflix",
+        "category": "Streaming",
+        "difficulty": "Easy",
+        "estimatedTime": "2 minutes",
+        "cancelMethods": ["Website", "In-App"],
+        "steps": [
+            {"order": 1, "instruction": "Open Netflix and tap your profile icon", "detail": "Tap the profile icon in the top-right corner of the home screen", "screenshotName": "netflix_step1", "actionType": "Tap", "targetElement": "Profile icon"},
+            {"order": 2, "instruction": "Tap 'Account'", "detail": "Scroll down in the menu and select 'Account'", "screenshotName": "netflix_step2", "actionType": "Tap", "targetElement": "Account button"},
+            {"order": 3, "instruction": "Click 'Cancel Membership'", "detail": "Under Membership & Billing section, click 'Cancel Membership' and confirm on the next page", "screenshotName": "netflix_step3", "actionType": "Tap", "targetElement": "Cancel Membership button"},
+            {"order": 4, "instruction": "Confirm cancellation", "detail": "Click 'Finish Cancellation' on the confirmation page. You'll still have access until your billing period ends.", "screenshotName": "netflix_step4", "actionType": "Confirm", "targetElement": "Finish Cancellation button"}
+        ],
+        "tips": [
+            "You can still watch until the end of your current billing period",
+            "Your profiles and watchlist are saved for 10 months if you want to come back",
+            "Consider downgrading to the Standard with ads plan at $6.99/month instead"
+        ],
+        "warnings": [
+            "If you subscribed through Apple App Store, cancel via iPhone Settings > [Your Name] > Subscriptions > Netflix > Cancel Subscription",
+            "If you subscribed through a third-party (e.g., cable provider), you must cancel through them directly"
+        ],
+        "alternativeActions": [
+            "Downgrade to Standard with ads ($6.99/mo) instead of cancelling",
+            "Share a plan with family to split the cost"
+        ],
+        "lastVerified": "2026-04-15",
+        "iconAssetName": "netflix_icon"
+    },
+    {
+        "id": "spotify",
+        "serviceName": "Spotify",
+        "category": "Music",
+        "difficulty": "Easy",
+        "estimatedTime": "2 minutes",
+        "cancelMethods": ["Website"],
+        "steps": [
+            {"order": 1, "instruction": "Go to spotify.com/account", "detail": "Open your web browser and navigate to spotify.com/account. You cannot cancel from the mobile app.", "screenshotName": "spotify_step1", "actionType": "Navigate", "targetElement": "Browser URL bar"},
+            {"order": 2, "instruction": "Log in to your account", "detail": "Enter your Spotify username and password", "screenshotName": "spotify_step2", "actionType": "Type", "targetElement": "Login form"},
+            {"order": 3, "instruction": "Click 'Change plan'", "detail": "Scroll to 'Your plan' section and click 'Change plan'", "screenshotName": "spotify_step3", "actionType": "Tap", "targetElement": "Change plan button"},
+            {"order": 4, "instruction": "Select 'Cancel Premium'", "detail": "Scroll down and click 'Cancel Premium', then confirm", "screenshotName": "spotify_step4", "actionType": "Confirm", "targetElement": "Cancel Premium button"}
+        ],
+        "tips": [
+            "You keep your playlists and saved music even after cancelling",
+            "Spotify Free still lets you listen with ads",
+            "Students can get Premium for $5.99/month"
+        ],
+        "warnings": [
+            "You CANNOT cancel from the mobile app - must use the website",
+            "If subscribed through Apple, cancel via Settings > Subscriptions"
+        ],
+        "alternativeActions": [
+            "Switch to Spotify Free (ad-supported)",
+            "Get a Duo plan ($14.99/mo) to share with someone"
+        ],
+        "lastVerified": "2026-04-10",
+        "iconAssetName": "spotify_icon"
+    },
+    {
+        "id": "adobe",
+        "serviceName": "Adobe Creative Cloud",
+        "category": "Software",
+        "difficulty": "Hard",
+        "estimatedTime": "15 minutes",
+        "cancelMethods": ["Website", "Phone Call"],
+        "steps": [
+            {"order": 1, "instruction": "Go to account.adobe.com", "detail": "Navigate to Adobe's account management page", "screenshotName": "adobe_step1", "actionType": "Navigate", "targetElement": "Browser URL bar"},
+            {"order": 2, "instruction": "Sign in with your Adobe ID", "detail": "Enter your email and password associated with your Adobe account", "screenshotName": "adobe_step2", "actionType": "Type", "targetElement": "Login form"},
+            {"order": 3, "instruction": "Go to Plans & Payment", "detail": "Click on 'Plans & Payment' in the left sidebar", "screenshotName": "adobe_step3", "actionType": "Tap", "targetElement": "Plans & Payment tab"},
+            {"order": 4, "instruction": "Click 'Manage plan'", "detail": "Find your active plan and click 'Manage plan'", "screenshotName": "adobe_step4", "actionType": "Tap", "targetElement": "Manage plan button"},
+            {"order": 5, "instruction": "Click 'Cancel plan'", "detail": "Scroll down and click 'Cancel your plan'. Adobe will show retention offers - decline all.", "screenshotName": "adobe_step5", "actionType": "Tap", "targetElement": "Cancel plan button"},
+            {"order": 6, "instruction": "Select reason and confirm", "detail": "Choose a cancellation reason, decline all retention offers, and confirm cancellation. Watch for early termination fees.", "screenshotName": "adobe_step6", "actionType": "Confirm", "targetElement": "Confirm cancellation"}
+        ],
+        "tips": [
+            "Cancel within 14 days of purchase for a full refund",
+            "Adobe often offers retention discounts - you can negotiate a lower price",
+            "Consider keeping just one app instead of the full suite"
+        ],
+        "warnings": [
+            "EARLY TERMINATION FEE: If you have an annual plan paid monthly, cancelling early incurs a fee of 50% of remaining payments",
+            "Adobe makes the cancel button hard to find - it's at the very bottom of the plan page",
+            "You may need to call customer service if the online cancellation doesn't work"
+        ],
+        "alternativeActions": [
+            "Switch to a single app plan ($22.99/mo) instead of full Creative Cloud",
+            "Try free alternatives like GIMP, DaVinci Resolve, or Figma",
+            "Ask for a student or educator discount"
+        ],
+        "lastVerified": "2026-04-12",
+        "iconAssetName": "adobe_icon"
+    },
+    {
+        "id": "hulu",
+        "serviceName": "Hulu",
+        "category": "Streaming",
+        "difficulty": "Easy",
+        "estimatedTime": "3 minutes",
+        "cancelMethods": ["Website", "In-App"],
+        "steps": [
+            {"order": 1, "instruction": "Open Hulu and go to Account", "detail": "Tap your profile icon, then select Account", "screenshotName": "hulu_step1", "actionType": "Tap", "targetElement": "Profile icon"},
+            {"order": 2, "instruction": "Scroll to 'Cancel' section", "detail": "On the Account page, scroll down to find the cancellation option", "screenshotName": "hulu_step2", "actionType": "Scroll", "targetElement": "Account page"},
+            {"order": 3, "instruction": "Click 'Cancel' and confirm", "detail": "Click Cancel, then confirm on the next page. Hulu will offer retention deals - decline if you want to cancel.", "screenshotName": "hulu_step3", "actionType": "Confirm", "targetElement": "Cancel button"}
+        ],
+        "tips": [
+            "Hulu often offers a come-back deal after cancellation",
+            "You can pause your subscription for up to 12 weeks instead"
+        ],
+        "warnings": [
+            "If subscribed through a third-party, you must cancel through them",
+            "If subscribed through Apple, cancel via Settings > Subscriptions"
+        ],
+        "alternativeActions": [
+            "Switch to Hulu with ads ($7.99/mo) instead of ad-free",
+            "Bundle with Disney+ and ESPN+ for better value"
+        ],
+        "lastVerified": "2026-04-08",
+        "iconAssetName": "hulu_icon"
+    },
+    {
+        "id": "gym",
+        "serviceName": "Gym Membership",
+        "category": "Fitness",
+        "difficulty": "Very Hard",
+        "estimatedTime": "30+ minutes",
+        "cancelMethods": ["In Person", "Phone Call", "Email"],
+        "steps": [
+            {"order": 1, "instruction": "Review your contract", "detail": "Check your gym contract for cancellation terms, notice period, and any fees. Many require 30-day written notice.", "screenshotName": null, "actionType": "Navigate", "targetElement": "Contract document"},
+            {"order": 2, "instruction": "Write a cancellation letter", "detail": "Draft a formal cancellation letter including your name, membership ID, and request to cancel. Send via certified mail.", "screenshotName": null, "actionType": "Type", "targetElement": "Letter document"},
+            {"order": 3, "instruction": "Visit the gym in person", "detail": "Most gyms require in-person cancellation. Bring your letter and ID. Ask for written confirmation.", "screenshotName": null, "actionType": "Navigate", "targetElement": "Gym front desk"},
+            {"order": 4, "instruction": "Follow up if needed", "detail": "If charges continue, dispute with your bank and file a complaint with your state attorney general.", "screenshotName": null, "actionType": "Wait", "targetElement": "Bank statement"}
+        ],
+        "tips": [
+            "Take photos of any cancellation paperwork you sign",
+            "Send cancellation via certified mail so you have proof of delivery",
+            "Check if your state has a health club law that limits cancellation restrictions"
+        ],
+        "warnings": [
+            "Many gyms require IN-PERSON cancellation during business hours - this is legal in most states",
+            "Watch out for 'maintenance fees' that may be charged even after cancellation",
+            "Some gyms will continue charging until they process your cancellation - monitor your bank statements"
+        ],
+        "alternativeActions": [
+            "Negotiate a lower rate or month-to-month plan",
+            "Switch to a budget gym ($10-25/mo) like Planet Fitness",
+            "Try free home workout apps instead"
+        ],
+        "lastVerified": "2026-04-05",
+        "iconAssetName": "gym_icon"
+    },
+    {
+        "id": "disney_plus",
+        "serviceName": "Disney+",
+        "category": "Streaming",
+        "difficulty": "Easy",
+        "estimatedTime": "2 minutes",
+        "cancelMethods": ["Website", "In-App"],
+        "steps": [
+            {"order": 1, "instruction": "Go to Disney+ account settings", "detail": "Open Disney+ and navigate to your Profile > Account", "screenshotName": "disney_step1", "actionType": "Tap", "targetElement": "Profile icon"},
+            {"order": 2, "instruction": "Click 'Cancel Subscription'", "detail": "Select your subscription and click 'Cancel Subscription'", "screenshotName": "disney_step2", "actionType": "Tap", "targetElement": "Cancel Subscription button"},
+            {"order": 3, "instruction": "Confirm cancellation", "detail": "Click 'Complete Cancellation' to confirm. You'll retain access until the end of your billing period.", "screenshotName": "disney_step3", "actionType": "Confirm", "targetElement": "Complete Cancellation button"}
+        ],
+        "tips": [
+            "Disney+ content remains available until the end of your billing period",
+            "Consider the bundle with Hulu and ESPN+ for better value"
+        ],
+        "warnings": [
+            "If subscribed through Apple, cancel via Settings > Subscriptions",
+            "If subscribed through a third-party, cancel through them"
+        ],
+        "alternativeActions": [
+            "Switch to Disney+ Basic (with ads) at $7.99/mo",
+            "Get the Duo or Trio bundle for more content"
+        ],
+        "lastVerified": "2026-04-14",
+        "iconAssetName": "disney_icon"
+    },
+    {
+        "id": "amazon_prime",
+        "serviceName": "Amazon Prime",
+        "category": "Shopping",
+        "difficulty": "Medium",
+        "estimatedTime": "5 minutes",
+        "cancelMethods": ["Website"],
+        "steps": [
+            {"order": 1, "instruction": "Go to amazon.com/membership", "detail": "Navigate to your Amazon Prime membership settings", "screenshotName": "amazon_step1", "actionType": "Navigate", "targetElement": "Browser URL bar"},
+            {"order": 2, "instruction": "Click 'Manage membership'", "detail": "Find the 'Manage membership' dropdown and click it", "screenshotName": "amazon_step2", "actionType": "Tap", "targetElement": "Manage membership button"},
+            {"order": 3, "instruction": "Click 'End membership'", "detail": "Select 'End membership and benefits' from the dropdown", "screenshotName": "amazon_step3", "actionType": "Tap", "targetElement": "End membership button"},
+            {"order": 4, "instruction": "Confirm on final page", "detail": "Amazon will show 2-3 pages of retention offers. Click 'Continue to cancel' and then 'Cancel membership'", "screenshotName": "amazon_step4", "actionType": "Confirm", "targetElement": "Cancel membership button"}
+        ],
+        "tips": [
+            "You may get a partial refund if you haven't used Prime benefits recently",
+            "Amazon often offers retention deals like $10-20 credit to stay"
+        ],
+        "warnings": [
+            "Amazon makes you click through multiple retention pages before you can cancel",
+            "If you have a free trial, cancel before it ends to avoid being charged"
+        ],
+        "alternativeActions": [
+            "Switch to Prime Monthly ($14.99/mo) instead of Annual ($139/yr) for more flexibility",
+            "Share Prime with family using Amazon Household"
+        ],
+        "lastVerified": "2026-04-11",
+        "iconAssetName": "amazon_icon"
+    },
+    {
+        "id": "apple_music",
+        "serviceName": "Apple Music",
+        "category": "Music",
+        "difficulty": "Easy",
+        "estimatedTime": "1 minute",
+        "cancelMethods": ["Apple Settings"],
+        "steps": [
+            {"order": 1, "instruction": "Open Settings app", "detail": "Open the Settings app on your iPhone or iPad", "screenshotName": "applemusic_step1", "actionType": "Tap", "targetElement": "Settings app"},
+            {"order": 2, "instruction": "Tap your name", "detail": "Tap your Apple ID name at the top of Settings", "screenshotName": "applemusic_step2", "actionType": "Tap", "targetElement": "Apple ID"},
+            {"order": 3, "instruction": "Tap 'Subscriptions'", "detail": "Select 'Subscriptions' from the list", "screenshotName": "applemusic_step3", "actionType": "Tap", "targetElement": "Subscriptions"},
+            {"order": 4, "instruction": "Select Apple Music and cancel", "detail": "Tap Apple Music, then tap 'Cancel Subscription' and confirm", "screenshotName": "applemusic_step4", "actionType": "Confirm", "targetElement": "Cancel Subscription button"}
+        ],
+        "tips": [
+            "Your music library stays in iCloud for 30 days after cancellation",
+            "Consider the Apple One bundle if you use multiple Apple services"
+        ],
+        "warnings": [
+            "Downloaded music will become unplayable after cancellation",
+            "If you have an Apple Music Family plan, all members lose access"
+        ],
+        "alternativeActions": [
+            "Switch to Apple Music Voice plan ($5.99/mo) for Siri-only access",
+            "Try Spotify Free or YouTube Music as alternatives"
+        ],
+        "lastVerified": "2026-04-13",
+        "iconAssetName": "applemusic_icon"
+    }
+]
