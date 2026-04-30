@@ -47,14 +47,10 @@ final class PurchaseManager {
     }
 
     func restorePurchases() async {
-        do {
-            for await result in Transaction.currentEntitlements {
-                if case .verified(let transaction) = result {
-                    purchasedProductIDs.insert(transaction.productID)
-                }
+        for await result in Transaction.currentEntitlements {
+            if case .verified(let transaction) = result {
+                purchasedProductIDs.insert(transaction.productID)
             }
-        } catch {
-            print("Restore failed: \(error)")
         }
     }
 
