@@ -20,7 +20,7 @@ struct ContentView: View {
 
             SavingsView()
                 .tabItem {
-                    Label("Savings", systemImage: "piggybank.fill")
+                    Label("Savings", systemImage: "dollarsign.circle.fill")
                 }
                 .tag(2)
 

@@ -37,7 +37,6 @@ struct HomeView: View {
                 vm.fetchSubscriptions(context: modelContext)
             }
             .onAppear {
-                PreviewData.insertSampleData(context: modelContext)
                 vm.fetchSubscriptions(context: modelContext)
                 savingsVM.calculate(subscriptions: vm.filteredSubscriptions)
             }
